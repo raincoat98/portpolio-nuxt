@@ -18,11 +18,36 @@
 </script>
 
 <template>
-  <div>
-    <nav>
-      <nuxt-link to="/">Home</nuxt-link> |
-      <nuxt-link to="/about">About</nuxt-link>
-    </nav>
+<div class="container mx-auto">
+    <Header class="
+      flex
+      items-center
+      justify-between
+      py-4
+      mb-8
+      border-b-2
+      border-gray-100
+    ">
+      <span>
+        <nuxt-link to="/" class="
+        text-2xl
+        '">Nuxt.js</nuxt-link>
+      </span>
+        <nav>
+        <nuxt-link to="/" class="
+          mr-4
+          text-sm
+          hover:bg-gray-200
+          pa-2
+        ">Home</nuxt-link> |
+        <nuxt-link to="/about" class="
+          mr-4
+          text-sm
+          hover:bg-gray-200
+          pa-2
+        ">About</nuxt-link>
+      </nav>
+    </Header>
     <slot />
   </div>
 </template>
