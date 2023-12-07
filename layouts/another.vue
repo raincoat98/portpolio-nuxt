@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-  definePageMeta({
-    layout: 'another'
-  })
+
 </script>
 
 <template>
   <div>
-    this is about page
-  </div>
-</template>
+    <nav>
+        this is another layout
+    </nav>
+    <slot />
+  </div></template>
 
 <style lang="scss" scoped>
 </style>
