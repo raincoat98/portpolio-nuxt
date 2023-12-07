@@ -1,5 +1,9 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <nav>
+      <nuxt-link to="/">Home</nuxt-link> |
+      <nuxt-link to="/about">About</nuxt-link>
+    </nav>
+    <NuxtPage></NuxtPage>
   </div>
 </template>
