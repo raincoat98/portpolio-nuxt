@@ -38,17 +38,27 @@
           mr-4
           text-sm
           hover:bg-gray-200
-          pa-2
+          p-2
         ">Home</nuxt-link> |
         <nuxt-link to="/about" class="
           mr-4
           text-sm
           hover:bg-gray-200
-          pa-2
+          p-2
         ">About</nuxt-link>
+        <nuxt-link to="/projects" class="
+        mr-4
+        text-sm
+        hover:bg-gray-200
+        ">
+          Project
+        </nuxt-link>
       </nav>
     </Header>
+    <main class="p-2 mt-10">
     <slot />
+
+    </main>
   </div>
 </template>
 
