@@ -1,10 +1,7 @@
 <template>
-    <div>
-      <h1>Welcome to the homepage</h1>
-      <AppAlert>
-        This is an auto-imported component
-      </AppAlert>
-    </div>
+  <div>
+    <h1>Welcome to the homepage</h1>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -18,19 +15,19 @@ useSeoMeta({
   twitterTitle: 'Main page',
   twitterDescription: '[twitter:description]',
   twitterImage: '[twitter:image]',
-  twitterCard: 'summary'
-})
+  twitterCard: 'summary',
+});
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: 'en',
   },
   link: [
     {
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.png'
-    }
-  ]
-})
+      href: '/favicon.png',
+    },
+  ],
+});
 </script>
