@@ -1,7 +1,29 @@
+<template>
+  <div class="container mx-auto">
+    <main class="p-2 mt-10">
+      <header
+        class="flex items-center justify-between py-4 mb-8 border-b-2 border-gray-100"
+      >
+        <div class="flex items-center space-x-12">
+          <div>
+            <nuxt-link to="/" class="text-2xl '">Nuxt.js</nuxt-link>
+          </div>
+
+          <Menu />
+        </div>
+
+        <ClientOnly>
+          <ColorModeSelector />
+        </ClientOnly>
+      </header>
+      <slot />
+    </main>
+  </div>
+</template>
+
 <script lang="ts" setup>
 const colorMode = useColorMode();
 
-console.log(colorMode.preference);
 colorMode.preference = 'light';
 
 useHead({
@@ -19,29 +41,6 @@ useHead({
   ],
 });
 </script>
-
-<template>
-  <div class="container mx-auto">
-    <main class="p-2 mt-10">
-      <Header
-        class="flex items-center justify-between py-4 mb-8 border-b-2 border-gray-100"
-      >
-        <div class="flex items-center space-x-12">
-          <div>
-            <nuxt-link to="/" class="text-2xl '">Nuxt.js</nuxt-link>
-          </div>
-
-          <Menu />
-        </div>
-
-        <ClientOnly>
-          <ColorModeSelector />
-        </ClientOnly>
-      </Header>
-      <slot />
-    </main>
-  </div>
-</template>
 
 <style>
 body {
