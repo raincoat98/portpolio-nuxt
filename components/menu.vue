@@ -8,7 +8,8 @@
       <nuxt-link to="/about" class="mr-4 text-sm hover:bg-gray-200 p-2"
         >About</nuxt-link
       >
-      <nuxt-link to="/projects" class="mr-4 text-sm hover:bg-gray-200">
+      |
+      <nuxt-link to="/projects" class="mr-4 text-sm hover:bg-gray-200 p-2">
         Project
       </nuxt-link>
     </nav>
