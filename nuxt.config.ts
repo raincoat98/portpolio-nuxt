@@ -5,4 +5,17 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  content: {
+    highlight: {
+      // Theme used in all color schemes.
+      theme: {
+        // Default theme (same as single string)
+        default: 'github-light',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+        // Theme used if `html.sepia`
+        sepia: 'monokai',
+      },
+    },
+  },
 });
