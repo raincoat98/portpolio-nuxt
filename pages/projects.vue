@@ -1,15 +1,9 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  <div>
-    <h2 class="text-2xl font-semibold mb-10">
-        projects 
-    </h2>
-    <ProjectList />
-  </div>
+  <article class="prose dark:prose-invert">
+    <ContentDoc path="/projects" />
+  </article>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

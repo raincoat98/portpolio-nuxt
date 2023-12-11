@@ -1,17 +1,5 @@
-<script lang="ts" setup>
-const { error, pending, data } = await useFetch(
-  "https://api.github.com/users/piotr-jura-udemy/repos"
-);
-const repos = computed(() =>
-  data.value
-    .filter(repo => repo.description)
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-);
-</script>
-
 <template>
-  <div>
-    <h2 class="text-2xl font-semibold mb-10">projects page</h2>
+  <div class="not-prose">
     <section v-if="pending">
       <p>Loading...</p>
     </section>
@@ -43,5 +31,15 @@ const repos = computed(() =>
     </section>
   </div>
 </template>
+<script setup>
+const { error, pending, data } = await useFetch(
+  'https://api.github.com/users/piotr-jura-udemy/repos'
+);
+const repos = computed(() =>
+  data.value
+    .filter(repo => repo.description)
+    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+);
+</script>
 
 <style lang="scss" scoped></style>
