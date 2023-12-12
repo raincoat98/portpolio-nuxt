@@ -12,7 +12,7 @@
           <div :class="{ 'col-span-4': doc.toc, 'col-span-6': !doc.toc }">
             <ContentRenderer :value="doc" />
           </div>
-          <div class="col-span-2 not-prose" v-if="doc.toc">
+          <div class="hidden md:col-span-2 md:block not-prose" v-if="doc.toc">
             <aside class="sticky top-8">
               <div class="font-semibold mb-2">Table of Content</div>
               <TocLinks :links="doc.body.toc.links" :active-id="activeId" />

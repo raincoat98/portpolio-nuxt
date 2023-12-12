@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto max-w-4xl">
     <header
-      class="flex items-center justify-between py-4 mb-8 border-b-2 border-gray-100"
+      class="flex items-start md:items-center justify-between py-4 mb-8 border-b-2 border-gray-100"
     >
       <div class="flex items-center md:space-x-12">
         <div class="hidden md:block">
