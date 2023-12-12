@@ -35,9 +35,13 @@ onMounted(() => {
     threshold: 0.5,
   });
   const elements = document.querySelectorAll('h2, h3');
-
-  elements.forEach(el => {
-    observer.observe(el);
+  for (const element of elements) {
+    observer.observe(element);
+  }
+  onBeforeUnmount(() => {
+    for (const element of elements) {
+      observer.unobserve(element);
+    }
   });
 });
 
