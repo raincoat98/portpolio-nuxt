@@ -11,7 +11,7 @@
         <li
           v-for="project in repos"
           :key="project.id"
-          class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100"
+          class="border border-gray-200 dark:border-gray-700 rounded-sm p-4 hover:bg-gray-100 dark:hover:bg-gray-700"
         >
           <a :href="project.html_url" target="_blank">
             <div class="flex items-center justify-between">

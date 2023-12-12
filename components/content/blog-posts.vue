@@ -9,11 +9,12 @@
         <li v-for="post in posts" :key="post._path">
           <NuxtLink
             :to="post._path"
-            class="column hover:bg-gray-100 dark:hover:bg-gray-700"
+            class="column group hover:bg-gray-100 dark:hover:bg-gray-700"
           >
             <div
               :class="{
-                'text-white dark:text-gray-900': !post.displayYear,
+                'text-white group-hover:text-gray-100   dark:text-gray-800 dark:group-hover:text-gray-700':
+                  !post.displayYear,
                 'text-gray-400 dark:text-gray-500': post.displayYear,
               }"
             >
